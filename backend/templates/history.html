@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Prediction History</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="history-page">
+
+    <div class="history-box">
+
+        <h1>
+            🌿 Prediction History
+        </h1>
+
+        <br>
+
+        {% if data %}
+
+        <table>
+
+            <tr>
+
+                <th>#</th>
+
+                <th>Leaf Image</th>
+
+                <th>Disease Name</th>
+
+                <th>Status</th>
+
+                <th>Confidence (%)</th>
+
+                <th>Date & Time</th>
+
+            </tr>
+
+            {% for row in data %}
+
+            <tr>
+
+                <td>
+                    {{ loop.index }}
+                </td>
+
+                <td>
+
+                    <img
+                    src="{{ url_for('uploaded_file', filename=row[2]) }}"
+                    width="100">
+
+                </td>
+
+                <td>
+
+                    {{ row[3].replace("_"," ") }}
+
+                </td>
+
+                <td>
+
+                    {% if "Healthy" in row[3] %}
+
+                        <span style="
+                        background:#d4edda;
+                        color:#155724;
+                        padding:6px 12px;
+                        border-radius:20px;
+                        font-weight:bold;">
+                        Healthy
+                        </span>
+
+                    {% else %}
+
+                        <span style="
+                        background:#f8d7da;
+                        color:#721c24;
+                        padding:6px 12px;
+                        border-radius:20px;
+                        font-weight:bold;">
+                        Diseased
+                        </span>
+
+                    {% endif %}
+
+                </td>
+
+                <td>
+
+                    {{ "%.2f"|format(row[4]) }}%
+
+                </td>
+
+                <td>
+
+                    {{ row[5] }}
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+        {% else %}
+
+        <div class="empty-history">
+
+            <h2>
+                No Prediction History Found
+            </h2>
+
+            <p>
+                Upload and predict a plant image first.
+            </p>
+
+        </div>
+
+        {% endif %}
+
+        <br><br>
+
+        <div class="history-buttons">
+
+            <a href="/dashboard">
+
+                <button>
+                    📊 Dashboard
+                </button>
+
+            </a>
+
+            <br><br>
+
+            <a href="/download_report">
+
+                <button>
+                    📥 Download Report
+                </button>
+
+            </a>
+
+            <br><br>
+
+            <a href="/">
+
+                <button>
+                    🏠 Back To Home
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

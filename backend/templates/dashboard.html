@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>PlantCare AI Dashboard</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="history-page">
+
+    <div class="history-box">
+
+        <h1>
+
+            📊 PlantCare AI Dashboard
+
+        </h1>
+
+        <p style="color:black; margin-bottom:20px;">
+
+            Overview of your disease prediction records.
+
+        </p>
+
+        <div class="profile-box">
+
+            <h3>
+
+                👤 User Profile
+
+            </h3>
+
+            <p>
+
+                Welcome to your personal Plant Disease Detection Dashboard
+
+            </p>
+
+        </div>
+
+        <br>
+
+        <div class="dashboard-cards">
+
+            <div class="dash-card">
+
+                <h2>
+
+                    {{ total }}
+
+                </h2>
+
+                <p>
+
+                    Total Predictions
+
+                </p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <h2>
+
+                    {{ healthy }}
+
+                </h2>
+
+                <p>
+
+                    Healthy Plants
+
+                </p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <h2>
+
+                    {{ diseased }}
+
+                </h2>
+
+                <p>
+
+                    Diseased Plants
+
+                </p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <h2>
+
+                    {{ avg_confidence }}%
+
+                </h2>
+
+                <p>
+
+                    Average Confidence
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="chart-container">
+            
+            <h2 style="color:black;">
+                
+                📈 Prediction Statistics
+            
+            </h2>
+            
+            <br>
+            
+            <canvas id="healthChart"></canvas>
+        
+        </div>
+        
+        <br><br>
+        
+        <div class="profile-box">
+            
+            <h3>
+                
+                📊 Analytics Summary
+            
+            </h3>
+            
+            <br>
+            
+            <p>
+                
+                Total Predictions : {{ total }}
+            
+            </p>
+            
+            <br>
+            
+            <p>
+                
+                Healthy Plants : {{ healthy }}
+            
+            </p>
+            
+            <br>
+            
+            <p>
+                
+                Diseased Plants : {{ diseased }}
+            
+            </p>
+            
+            <br>
+            
+            <p>
+                
+                Average Confidence : {{ avg_confidence }}%
+            
+            </p>
+        
+        </div>
+        
+        <br><br>
+
+        <h2 style="color:black;">
+
+            Recent Predictions
+
+        </h2>
+
+        <br>
+
+        <table>
+
+            <tr>
+
+                <th>Disease Name</th>
+
+                <th>Confidence</th>
+
+                <th>Date</th>
+
+            </tr>
+
+            {% for row in recent %}
+
+            <tr>
+
+                <td>
+
+                    {{ row[0].replace("_"," ") }}
+
+                </td>
+
+                <td>
+
+                    {{ "%.2f"|format(row[1]) }}%
+
+                </td>
+
+                <td>
+
+                    {{ row[2] }}
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+        <br><br>
+
+        <a href="/profile">
+            
+            <button>
+                
+                👤 My Profile
+
+            </button>
+        
+        </a>
+        
+        <br><br>
+
+        <a href="/history">
+
+            <button>
+
+                📜 View Prediction History
+
+            </button>
+
+        </a>
+
+        <br><br>
+
+        <a href="/download_report">
+
+            <button>
+
+                📥 Download Report
+
+            </button>
+
+        </a>
+
+        <br><br>
+
+        <a href="/">
+
+            <button>
+
+                🏠 Back To Home
+
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const ctx = document.getElementById("healthChart");
+
+    new Chart(ctx, {
+
+        type: "pie",
+
+        data: {
+
+            labels: [
+                "Healthy Plants",
+                "Diseased Plants"
+            ],
+
+            datasets: [{
+
+                data: [
+                    Number("{{ healthy }}"),
+                    Number("{{ diseased }}")
+                ],
+
+                backgroundColor: [
+                    "#2ecc71",
+                    "#e74c3c"
+                ]
+
+            }]
+
+        },
+
+        options: {
+
+            responsive: true
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

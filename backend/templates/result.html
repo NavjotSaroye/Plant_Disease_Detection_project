@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="result-page">
+
+    <div class="result-card">
+
+        <img
+        src="{{ url_for('uploaded_file', filename=image) }}"
+        alt="Plant Image">
+
+        <div class="result-info">
+
+            <h1>
+
+                {{ label }}
+
+            </h1>
+
+            <h3>
+
+                Confidence :
+                {{ confidence }}%
+
+            </h3>
+
+            {% if confidence >= 90 %}
+
+            <h4 style="color:green;">
+
+                ✅ High Confidence Prediction
+
+            </h4>
+
+            {% elif confidence >= 70 %}
+
+            <h4 style="color:orange;">
+
+                ⚠ Medium Confidence Prediction
+
+            </h4>
+
+            {% else %}
+
+            <h4 style="color:red;">
+
+                ❌ Low Confidence Prediction
+
+            </h4>
+
+            {% endif %}
+
+            <br>
+
+            <h3>
+
+                Status :
+                {{ status }}
+
+            </h3>
+
+            <br>
+
+            <div class="description-box">
+
+                <h3>
+
+                    📄 Disease Information
+
+                </h3>
+
+                <p>
+
+                    {{ description }}
+
+                </p>
+
+            </div>
+
+            <div class="solution">
+
+                <h3>
+
+                    🌱 Recommended Treatment
+
+                </h3>
+
+                <p>
+
+                    {{ solution }}
+
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="action-buttons">
+
+                <a href="/">
+
+                    <button>
+
+                        🔍 Detect Another Plant
+
+                    </button>
+
+                </a>
+
+                {% if session.get('user') %}
+
+                <a href="/history">
+
+                    <button>
+
+                        📜 View Prediction History
+
+                    </button>
+
+                </a>
+
+                <a href="/download_report">
+
+                    <button>
+
+                        📥 Download Report
+
+                    </button>
+
+                </a>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

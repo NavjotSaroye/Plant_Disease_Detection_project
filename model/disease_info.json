@@ -1,0 +1,276 @@
+{ "Apple_Black_Rot": {
+  "status": "Diseased",
+  "description": "Black Rot is a fungal disease that affects apple leaves, branches, and fruits. Dark lesions gradually enlarge and can severely reduce fruit quality and overall tree health if left untreated.",
+  "solution": "Remove infected fruits, leaves, and branches immediately. Apply a recommended fungicide during the growing season and maintain orchard sanitation. Proper pruning helps improve airflow and reduce fungal growth."
+},
+
+  "Apple_Cedar_Apple_Rust": {
+  "status": "Diseased",
+  "description": "Cedar Apple Rust is a fungal disease that causes bright yellow-orange spots on apple leaves. It can weaken the plant and reduce fruit production over time.",
+  "solution": "Use fungicides during the early growing season and remove nearby cedar hosts if possible. Collect and destroy infected leaves and ensure proper spacing between trees to improve air circulation."
+},
+
+  "Apple_Healthy": {
+  "status": "Healthy",
+  "description": "The apple plant appears healthy with no visible signs of disease, infection, or nutrient deficiency. Leaves are green and growth is normal.",
+  "solution": "Continue regular watering, pruning, and fertilization practices. Monitor the plant periodically for early signs of pests or diseases and maintain proper orchard hygiene."
+},
+
+  "Cherry_Healthy": {
+  "status": "Healthy",
+  "description": "The cherry plant is healthy and shows normal growth patterns with no visible disease symptoms.",
+  "solution": "Maintain balanced irrigation, provide adequate sunlight, and inspect leaves regularly to ensure the plant remains disease-free."
+},
+
+  "Cherry_Powdery_Mildew": {
+  "status": "Diseased",
+  "description": "Powdery Mildew appears as a white powder-like fungal growth on leaves and young shoots. It can reduce plant vigor and affect fruit quality.",
+  "solution": "Remove heavily infected leaves and apply sulfur-based or neem-based fungicides. Improve air circulation and avoid excessive humidity around the plant."
+},
+
+"Chrysanthemum_Bacterial_Leaf_Spot": {
+  "status": "Diseased",
+  "description": "This disease causes dark water-soaked spots on leaves which gradually enlarge and damage plant tissue.",
+  "solution": "Remove infected leaves immediately and avoid overhead watering. Apply suitable bactericides and maintain proper plant spacing to reduce disease spread."
+},
+
+"Chrysanthemum_Healthy": {
+  "status": "Healthy",
+  "description": "The chrysanthemum plant is healthy with normal foliage and no visible signs of disease or pest infestation.",
+  "solution": "Continue providing adequate sunlight, balanced nutrients, and proper watering schedules for optimal growth."
+},
+
+"Chrysanthemum_Septoria_Leaf_Spot": {
+  "status": "Diseased",
+  "description": "Septoria Leaf Spot is a fungal disease that creates dark circular spots on leaves, eventually causing premature leaf drop.",
+  "solution": "Remove infected foliage and apply a suitable fungicide. Avoid excessive leaf moisture and improve air circulation around the plant."
+},
+
+"Corn_Common_Rust": {
+  "status": "Diseased",
+  "description": "Common Rust produces reddish-brown pustules on corn leaves. Severe infections may reduce photosynthesis and lower crop yield.",
+  "solution": "Use resistant corn varieties and apply fungicides when necessary. Monitor fields regularly and remove infected crop debris after harvest."
+},
+
+"Corn_Gray_Leaf_Spot": {
+  "status": "Diseased",
+  "description": "Gray Leaf Spot causes rectangular gray lesions on leaves and is one of the most common fungal diseases in corn.",
+  "solution": "Practice crop rotation and remove infected residues. Apply fungicides during favorable disease conditions and ensure proper field management."
+},
+
+"Corn_Healthy": {
+  "status": "Healthy",
+  "description": "The corn plant appears healthy with normal leaf color, growth, and no visible disease symptoms.",
+  "solution": "Maintain balanced fertilization and irrigation schedules. Continue monitoring the crop regularly for pests and diseases."
+},
+
+"Corn_Northern_Leaf_Blight": {
+  "status": "Diseased",
+  "description": "Northern Leaf Blight causes long gray-green lesions that gradually expand and damage large portions of the leaf surface.",
+  "solution": "Use resistant hybrids whenever possible and apply fungicides when symptoms first appear. Crop rotation can also help reduce disease pressure."
+},
+
+  "Grape_Black_Rot": {
+  "status": "Diseased",
+  "description": "Black Rot is a fungal disease that affects grape leaves, stems, and fruits. Small brown spots gradually enlarge and can cause severe fruit damage if not controlled.",
+  "solution": "Remove infected leaves and fruits immediately to prevent further spread. Apply recommended fungicides during the growing season and maintain proper vineyard sanitation. Pruning helps improve airflow and reduce fungal growth."
+},
+
+"Grape_Esca": {
+  "status": "Diseased",
+  "description": "Esca is a serious grapevine disease that causes leaf discoloration, wood decay, and gradual vine decline. In severe cases, it can significantly reduce productivity.",
+  "solution": "Remove severely affected vines and disinfect pruning tools regularly. Avoid excessive pruning wounds and maintain proper vineyard management practices to minimize infection risks."
+},
+
+"Grape_Healthy": {
+  "status": "Healthy",
+  "description": "The grape plant appears healthy with strong foliage, normal growth, and no visible disease symptoms.",
+  "solution": "Continue proper irrigation, fertilization, and pruning practices. Regular monitoring can help detect diseases early and maintain healthy vine development."
+},
+
+"Grape_Leaf_Blight": {
+  "status": "Diseased",
+  "description": "Leaf Blight causes brown patches and drying of grape leaves. If untreated, it may weaken the plant and reduce fruit quality.",
+  "solution": "Remove infected leaves and apply appropriate fungicides. Ensure adequate spacing between vines and avoid excessive moisture on foliage."
+},
+
+"Hibiscus_Blight": {
+  "status": "Diseased",
+  "description": "Blight causes yellowing, browning, and drying of hibiscus leaves. The disease can spread quickly under humid environmental conditions.",
+  "solution": "Prune infected leaves and improve air circulation around the plant. Apply suitable fungicides and avoid excessive watering to reduce disease spread."
+},
+
+"Hibiscus_Healthy": {
+  "status": "Healthy",
+  "description": "The hibiscus plant is healthy with vibrant leaves and normal flowering characteristics.",
+  "solution": "Maintain regular watering, adequate sunlight exposure, and balanced fertilization to support healthy plant growth."
+},
+
+"Hibiscus_Necrosis": {
+  "status": "Diseased",
+  "description": "Necrosis causes dead patches to develop on leaves and stems, affecting overall plant health and appearance.",
+  "solution": "Remove damaged plant parts and inspect for possible nutrient deficiencies or infections. Apply suitable treatments and improve general plant care practices."
+},
+
+"Hibiscus_Scorch": {
+  "status": "Diseased",
+  "description": "Leaf Scorch causes burn-like symptoms on leaves due to environmental stress or disease-related damage.",
+  "solution": "Provide sufficient water during hot weather and protect the plant from excessive direct sunlight. Improve soil moisture retention and monitor plant recovery."
+},
+
+"Money Plant_Money_Plant_Bacterial_Wilt": {
+  "status": "Diseased",
+  "description": "Bacterial Wilt causes wilting, yellowing, and eventual collapse of affected leaves and stems. It spreads rapidly under favorable conditions.",
+  "solution": "Remove infected plant parts immediately and avoid overwatering. Apply suitable bactericides and ensure proper drainage to reduce bacterial growth."
+},
+
+"Money Plant_Money_Plant_Chlorosis": {
+  "status": "Diseased",
+  "description": "Chlorosis is characterized by yellowing leaves caused by nutrient deficiencies, poor drainage, or unfavorable soil conditions.",
+  "solution": "Apply balanced fertilizers rich in iron and micronutrients. Improve soil quality and ensure proper watering practices to restore healthy leaf color."
+},
+
+"Money Plant_Money_Plant_Healthy": {
+  "status": "Healthy",
+  "description": "The money plant appears healthy with lush green leaves and no visible signs of disease or stress.",
+  "solution": "Continue providing indirect sunlight, moderate watering, and occasional fertilization for sustained healthy growth."
+},
+
+"Money Plant_Money_Plant_Manganese_Toxicity": {
+  "status": "Diseased",
+  "description": "Excess manganese in the soil can cause leaf discoloration, poor growth, and nutrient imbalance in money plants.",
+  "solution": "Reduce manganese levels by improving soil conditions and avoiding excessive fertilizer use. Monitor nutrient balance and maintain proper watering schedules."
+},
+
+"Peach_Bacterial_Spot": {
+  "status": "Diseased",
+  "description": "Bacterial Spot causes dark lesions on peach leaves and fruits, reducing fruit quality and plant vigor.",
+  "solution": "Apply copper-based sprays and remove infected plant debris. Avoid overhead irrigation and maintain good orchard sanitation practices."
+},
+
+"Peach_Healthy": {
+  "status": "Healthy",
+  "description": "The peach plant appears healthy with no visible disease symptoms and normal leaf development.",
+  "solution": "Continue proper watering, pruning, and fertilization practices. Regular monitoring helps maintain long-term plant health."
+},
+
+"Pepper_Bacterial_Spot": {
+  "status": "Diseased",
+  "description": "Bacterial Spot causes water-soaked lesions that gradually become dark and necrotic on pepper leaves and fruits.",
+  "solution": "Use bactericides as recommended and avoid excessive moisture around plants. Remove infected leaves and improve airflow between plants."
+},
+
+"Pepper_Healthy": {
+  "status": "Healthy",
+  "description": "The pepper plant is healthy and shows strong growth with no visible disease symptoms.",
+  "solution": "Maintain proper nutrient management, irrigation, and pest monitoring to ensure continued healthy development."
+},
+
+   "Potato_Early_Blight": {
+    "status": "Diseased",
+    "description": "Early Blight is a fungal disease that produces brown circular spots with concentric ring patterns on leaves. It can reduce plant vigor and lower potato yields if left unmanaged.",
+    "solution": "Remove infected leaves and apply fungicides at recommended intervals. Practice crop rotation and maintain proper plant spacing to improve airflow and reduce disease development."
+  },
+
+  "Potato_Healthy": {
+    "status": "Healthy",
+    "description": "The potato plant appears healthy with normal leaf coloration and vigorous growth. No symptoms of fungal, bacterial, or viral diseases are visible.",
+    "solution": "Continue proper irrigation, soil management, and balanced fertilization. Regular field inspections and preventive care will help maintain healthy crop growth."
+  },
+
+  "Potato_Late_Blight": {
+    "status": "Diseased",
+    "description": "Late Blight is a highly destructive disease that causes dark lesions on leaves and stems. Under favorable conditions, it can spread rapidly and destroy entire crops.",
+    "solution": "Remove infected plants immediately and avoid excessive moisture in the growing area. Apply effective fungicides and practice crop rotation to reduce future outbreaks."
+  },
+
+  "Rose_Black_Spot": {
+    "status": "Diseased",
+    "description": "Rose Black Spot is a fungal disease that produces black circular spots on leaves. As the infection progresses, leaves turn yellow and fall prematurely, reducing plant vigor and flowering capacity.",
+    "solution": "Remove all infected leaves from the plant and surrounding soil to prevent fungal spread. Apply a suitable fungicide every 7–14 days and ensure proper air circulation around the plant. Avoid overhead watering and maintain garden cleanliness."
+  },
+
+  "Rose_Downy_Mildew": {
+    "status": "Diseased",
+    "description": "Downy Mildew is a fungal-like disease that causes yellow or purple patches on leaves along with white mold growth underneath. Severe infections can lead to leaf drop and poor plant health.",
+    "solution": "Improve airflow around the plant and avoid excessive humidity. Remove infected leaves immediately and apply recommended fungicides. Water the plant at the base rather than on the foliage."
+  },
+
+  "Rose_Healthy": {
+    "status": "Healthy",
+    "description": "The rose plant appears healthy with vibrant green leaves and normal growth. No visible signs of disease, pest damage, or nutrient deficiency are present.",
+    "solution": "Continue regular watering, balanced fertilization, and adequate sunlight exposure. Prune dead branches periodically and monitor the plant for early disease symptoms."
+  },
+
+  "Rose_Mosaic_Virus": {
+    "status": "Diseased",
+    "description": "Rose Mosaic Virus causes yellow mosaic patterns, distorted leaves, and reduced plant vigor. The disease spreads through infected propagation material and cannot be completely cured.",
+    "solution": "Remove severely infected plants to prevent disease spread. Use certified disease-free planting material and disinfect pruning tools regularly. Monitor nearby plants for similar symptoms."
+  },
+
+  "Rose_Powdery_Mildew": {
+    "status": "Diseased",
+    "description": "Powdery Mildew appears as a white powder-like fungal growth on leaves, stems, and buds. It can reduce photosynthesis and negatively affect flower production.",
+    "solution": "Apply suitable fungicides and improve air circulation around the plant. Avoid excessive nitrogen fertilization and remove heavily infected plant parts. Maintain moderate humidity levels."
+  },
+
+  "Rose_Rust": {
+    "status": "Diseased",
+    "description": "Rose Rust is a fungal disease that produces orange or rust-colored pustules on leaves. Severe infections can weaken the plant and cause premature leaf drop.",
+    "solution": "Remove infected leaves immediately and dispose of them properly. Apply fungicides as recommended and ensure adequate spacing between plants to improve airflow and reduce moisture buildup."
+  },
+
+  "Rose_Yellow_Mosaic_Virus": {
+    "status": "Diseased",
+    "description": "Yellow Mosaic Virus causes irregular yellow patterns on rose leaves and may reduce overall plant growth. Infected plants often show reduced flowering and poor vigor.",
+    "solution": "Use disease-free planting material and remove severely infected plants when necessary. Control insect vectors and sanitize gardening tools to minimize disease transmission."
+  },
+
+  "Strawberry_Healthy": {
+    "status": "Healthy",
+    "description": "The strawberry plant appears healthy with strong foliage and normal growth. There are no visible symptoms of disease, pest infestation, or nutrient deficiency.",
+    "solution": "Maintain regular watering, adequate sunlight, and balanced fertilization. Remove old leaves periodically and monitor plants regularly for early signs of disease."
+  },
+
+  "Strawberry_Leaf_Scorch": {
+    "status": "Diseased",
+    "description": "Leaf Scorch causes strawberry leaves to appear burnt along the edges, eventually leading to drying and reduced plant performance. The disease often develops under stressful environmental conditions.",
+    "solution": "Remove affected leaves and maintain proper watering practices. Improve air circulation around plants and avoid overcrowding. Apply suitable fungicides if fungal infection is confirmed."
+  },
+
+  "Tomato_Bacterial_Spot": {
+    "status": "Diseased",
+    "description": "Tomato Bacterial Spot is a bacterial disease that causes small dark lesions on leaves, stems, and fruits. The disease spreads rapidly in warm and humid conditions and can significantly reduce crop quality and yield.",
+    "solution": "Remove infected leaves and fruits immediately to reduce the spread of bacteria. Apply copper-based bactericides as recommended and avoid overhead irrigation. Maintain proper spacing between plants to improve airflow and reduce moisture buildup."
+  },
+
+  "Tomato_Early_Blight": {
+    "status": "Diseased",
+    "description": "Early Blight is a common fungal disease characterized by brown spots with concentric rings on older leaves. If left untreated, it can cause premature leaf drop and reduced fruit production.",
+    "solution": "Apply recommended fungicides regularly and remove infected foliage. Practice crop rotation and avoid planting tomatoes in the same location every season. Ensure proper spacing and watering practices to reduce disease development."
+  },
+
+  "Tomato_Healthy": {
+    "status": "Healthy",
+    "description": "The tomato plant appears healthy with vibrant green leaves, strong stems, and no visible signs of disease or nutrient deficiency. Growth and foliage development are normal.",
+    "solution": "Continue providing balanced fertilizer, adequate sunlight, and regular watering. Monitor the plant frequently for pests and diseases and maintain proper garden hygiene for healthy growth and maximum fruit production."
+  },
+
+  "Tomato_Late_Blight": {
+    "status": "Diseased",
+    "description": "Late Blight is a highly destructive disease that causes large dark lesions on leaves and stems. Under favorable conditions, it spreads rapidly and can destroy entire tomato crops within a short period.",
+    "solution": "Remove infected plants immediately to prevent disease spread. Apply effective fungicides and avoid excessive moisture around the plants. Ensure proper ventilation and maintain field sanitation throughout the growing season."
+  },
+
+  "Turmeric_Aphid_Infestation": {
+    "status": "Diseased",
+    "description": "Aphid Infestation occurs when small sap-sucking insects attack turmeric leaves and stems. These pests weaken the plant, cause leaf curling, and may transmit additional plant diseases.",
+    "solution": "Use recommended insecticides or neem-based treatments to control aphids. Remove heavily infested leaves and regularly inspect plants for pest activity. Encourage natural predators such as ladybugs whenever possible."
+  },
+
+  "Turmeric_Blotch": {
+    "status": "Diseased",
+    "description": "Turmeric Blotch is a fungal disease that causes brown or dark spots on leaves, reducing photosynthesis and overall plant vigor. The disease becomes more severe in humid and wet environments.",
+    "solution": "Apply suitable fungicides and remove infected leaves to prevent further spread. Improve field sanitation and avoid excessive leaf moisture. Ensure proper spacing between plants to promote better airflow and disease prevention."
+  }
+}

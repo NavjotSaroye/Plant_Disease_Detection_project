@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Plant Disease Detection</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="hero">
+    
+    <div class="navbar">
+        
+        <h2>🌿 PlantCare AI</h2>
+        
+        <div>
+            
+            {% if user %}
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/history">History</a>
+            <a href="/profile">Profile</a>
+            <a href="/logout">Logout</a>
+            
+            {% else %}
+
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/signup">Signup</a>
+
+            {% endif %}
+
+            <button
+            
+            id="themeBtn"
+            onclick="toggleTheme()"
+            style="
+            width:auto;
+            padding:10px 20px;
+            margin-left:20px;">
+              🌙 Dark Mode
+        </button>
+            
+        
+        </div>
+    
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+        <div class="left">
+
+            {% if user %}
+            <h3>
+                Welcome {{ user }}
+            </h3>
+            {% endif %}
+
+            <h1>
+
+                Plant Disease
+
+                <span>
+                    Detection
+                </span>
+
+            </h1>
+
+            <p>
+
+                Upload a plant leaf image and get
+                instant AI-powered disease detection,
+                health status and treatment
+                recommendations.
+
+            </p>
+
+            <form
+            action="/predict"
+            method="POST"
+            enctype="multipart/form-data">
+
+                <div class="upload-box">
+
+                    <input
+                    type="file"
+                    name="image"
+                    required
+                    onchange="previewImage(this)">
+
+                    <button
+                    type="button"
+                    onclick="startCamera()">
+
+                        📷 Open Camera
+
+                    </button>
+
+                    <br><br>
+
+                    <button
+                    type="button"
+                    onclick="stopCamera()">
+
+                        ❌ Close Camera
+
+                    </button>
+
+                    <br><br>
+
+                    <video
+                    id="video"
+                    autoplay
+                    playsinline>
+
+                    </video>
+
+                    <br><br>
+
+                    <button
+                    type="submit">
+
+                        🔍 Predict Disease
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- IMAGE PREVIEW -->
+
+        <div class="right">
+
+            <img
+            id="preview"
+            src=""
+            alt="Preview">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+    <div class="spinner"></div>
+
+    <p>
+
+        AI is analyzing your plant leaf...
+
+    </p>
+
+</div>
+
+<script
+src="{{ url_for('static', filename='script.js') }}">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="history-page">
+
+    <div class="history-box">
+
+        <h1>👤 User Profile</h1>
+
+        <br>
+
+        <div class="dashboard-cards">
+
+            <div class="dash-card">
+
+                <h2>{{ total }}</h2>
+
+                <p>Total Predictions</p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <h2>{{ healthy }}</h2>
+
+                <p>Healthy Plants</p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <h2>{{ diseased }}</h2>
+
+                <p>Diseased Plants</p>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="profile-box">
+            
+            <img
+            src="{{ url_for('static', filename='profile_pics/' + profile_pic) }}"
+            width="150"
+            height="150"
+            style="
+            border-radius:50%;
+            object-fit:cover;
+            display:block;
+            margin:auto;
+            margin-bottom:20px;
+            ">
+            
+            <form
+            action="/upload_profile_pic"
+            method="POST"
+            enctype="multipart/form-data">
+              
+               <input
+               type="file"
+               name="profile_pic"
+               required>
+               
+               <br><br>
+               
+               <button type="submit">
+                Upload Profile Picture
+               </button>
+            </form>
+
+            <br>
+
+            <h3>Username</h3>
+            <p>{{ username }}</p>
+        
+        </div>
+
+        <br>
+
+        <a href="/dashboard">
+
+            <button>
+
+                📊 Back To Dashboard
+
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
