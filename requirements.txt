@@ -1,7 +1,10 @@
+flask
+gunicorn
 tensorflow
-streamlit
 numpy
 pillow
 matplotlib
 scikit-learn
 seaborn
+reportlab
+werkzeug
