@@ -40,18 +40,25 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 app.secret_key = "secret123"
 
-
 # ================= FOLDERS =================
 
-UPLOAD_FOLDER = "uploads"
+BASE_DIR = os.path.dirname(
+    os.path.abspath(__file__)
+)
+
+DB_PATH = os.path.join(
+    BASE_DIR,
+    "user.db"
+)
+
+UPLOAD_FOLDER = os.path.join(
+    BASE_DIR,
+    "uploads"
+)
 
 os.makedirs(
     UPLOAD_FOLDER,
     exist_ok=True
-)
-
-BASE_DIR = os.path.dirname(
-    os.path.abspath(__file__)
 )
 
 MODEL_PATH = os.path.join(
@@ -98,8 +105,7 @@ print(
 
 def init_db():
 
-    conn = sqlite3.connect(
-        "users.db"
+    conn = sqlite3.connect(DB_PATH
     )
 
     c = conn.cursor()
@@ -269,7 +275,7 @@ def predict():
     # ================= SAVE HISTORY =================
 
     conn = sqlite3.connect(
-        "users.db"
+        DB_PATH
     )
 
     c = conn.cursor()
@@ -336,7 +342,7 @@ def login():
         username = request.form["username"]
         password = request.form["password"]
 
-        conn = sqlite3.connect("users.db")
+        conn = sqlite3.connect(DB_PATH)
 
         c = conn.cursor()
 
@@ -398,7 +404,7 @@ def signup():
         )
 
         conn = sqlite3.connect(
-            "users.db"
+            DB_PATH
         )
 
         c = conn.cursor()
@@ -455,7 +461,7 @@ def history():
         )
 
     conn = sqlite3.connect(
-        "users.db"
+        DB_PATH
     )
 
     c = conn.cursor()
@@ -490,7 +496,7 @@ def dashboard():
     if not username:
         return redirect("/login")
 
-    conn = sqlite3.connect("users.db")
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
 
     # Profile Picture
@@ -586,7 +592,7 @@ def download_report():
     if not username:
         return redirect("/login")
 
-    conn = sqlite3.connect("users.db")
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
 
     c.execute(
@@ -779,7 +785,7 @@ def profile():
     if not username:
         return redirect("/login")
 
-    conn = sqlite3.connect("users.db")
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
 
     c.execute(
@@ -861,7 +867,7 @@ def upload_profile_pic():
 
         file.save(save_path)
 
-        conn = sqlite3.connect("users.db")
+        conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
 
         c.execute(
