@@ -842,10 +842,7 @@ def profile():
 
 # ================= UPLOAD PROFILE PIC =================
 
-@app.route(
-    "/upload_profile_pic",
-    methods=["POST"]
-)
+@app.route("/upload_profile_pic", methods=["POST"])
 def upload_profile_pic():
 
     username = session.get("user")
@@ -859,9 +856,16 @@ def upload_profile_pic():
 
         filename = f"{username}_{secure_filename(file.filename)}"
 
-        save_path = os.path.join(
+        upload_folder = os.path.join(
+            os.path.dirname(__file__),
             "static",
-            "profile_pics",
+            "profile_pics"
+        )
+
+        os.makedirs(upload_folder, exist_ok=True)
+
+        save_path = os.path.join(
+            upload_folder,
             filename
         )
 
